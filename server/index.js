@@ -4,7 +4,8 @@ const {data} = require("./config/default.js")
 const PORT = data.serverPort
 const authRouter=require("./routes/auth.routes")
 const app=express()
-app.use("/api/auth",authRouter)
+app.use(express.json())
+app.use( "/api/auth", authRouter)
 const start= async ()=>{
     try{
         await mongoose.connect(data.dbURL)
