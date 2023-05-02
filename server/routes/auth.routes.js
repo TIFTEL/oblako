@@ -1,8 +1,11 @@
 const Router=require('express');
 const User = require("../models/User")
 const bcrypt = require("bcryptjs")
+<<<<<<< HEAD
 const {data} = require("../config/default.js")
 const jwt = require("jsonwebtoken")
+=======
+>>>>>>> parent of fd6bb69 (р)
 const {check, validationResult}=require("express-validator")
 const router = new Router()
 
