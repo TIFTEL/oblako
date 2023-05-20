@@ -1,19 +1,35 @@
-import Navbar from "./navbar/Navbar";
 import './app.scss'
-import {BrowserRouter, Route, Routes} from "react-router-dom";
+import {BrowserRouter, Route, Routes, createBrowserRouter,
+    RouterProvider,} from "react-router-dom";
 import Registration from "./registration/Registration";
-function App() {
-  return (
-      <BrowserRouter>
-          <div className='app'>
-              <Navbar/>
-              <Routes>
-                  <Route path ="/registration" component={Registration}/>
-              </Routes>
-          </div>
-      </BrowserRouter>
+import Mainpage  from './mainpage/Mainpage';
+import Login from "./autorization/Login";
+import {useSelector} from "react-redux";
 
-  );
+
+const router = createBrowserRouter([
+    {
+        path: "/",
+        element: <Mainpage />,
+    },
+    {
+        path: "/registration",
+        element: <Registration />,
+    },
+    {
+        path: "/login",
+        element: <Login />,
+    },
+]);
+
+function App() {
+    return (
+        <div className='app'>
+            <div className='wrap'>
+            <RouterProvider router={router} />
+            </div>
+        </div>
+    );
 }
 
 export default App;

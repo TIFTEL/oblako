@@ -4,6 +4,9 @@ const {data} = require("./config/default.js")
 const PORT = data.serverPort
 const authRouter=require("./routes/auth.routes")
 const app=express()
+const corsMiddleware = require('./middleware/cors.middleware')
+
+app.use(corsMiddleware)
 app.use(express.json())
 app.use( "/api/auth", authRouter)
 const start= async ()=>{
