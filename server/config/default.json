@@ -1,7 +1,7 @@
 {
   "serverPort" : 5000,
   "dbUrl": "mongodb+srv://tysachnyk1111:5TgM4aVoo@cluster0.czlbpfo.mongodb.net/?retryWrites=true&w=majority",
-  "secretKey": "mern-secket-key",
-  "filePath": "E:\\MERN-cloud-disk\\server\\files",
-  "staticPath": "E:\\MERN-cloud-disk\\server\\static"
+  "secretKey": "secket-key12",
+  "filePath": "E:\\oblako\\server\\files",
+  "staticPath": "E:\\oblako\\server\\static"
 }
