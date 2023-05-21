@@ -1,23 +1,26 @@
+@import "../utils/colors";
 
-*{
-  margin:0;
+* {
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color:#566885;
+  color: #566885;
 }
-body{
-  background-color:#E9E6E6;
+
+body {
+  background-color: #E9E6E6;
 }
-.app{
+
+#root {
+  width: 100%;
+}
+
+.app {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
-#root{
-  width: 100%;
-}
 .wrap {
   width: 1140px;
   display: flex;
